@@ -9,7 +9,7 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
         <p>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a href="{{ page.url | prepend: site.github.url }}">{{ page.title }}</a>
         </p>
     {% endfor %}
   </ul>
